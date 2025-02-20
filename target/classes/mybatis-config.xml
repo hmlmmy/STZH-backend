@@ -19,4 +19,7 @@
         <setting name="jdbcTypeForNull" value="OTHER"/>
         <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
     </settings>
+    <mappers>
+        <mapper resource="org/ztshy/mapper/ChatRecordMapper.xml"/>
+    </mappers>
 </configuration>

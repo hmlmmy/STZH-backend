@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 命名空间要与 Mapper 接口的全限定名一致 -->
+<mapper namespace="org.ztshy.mapper.ChatRecordMapper">
+    <!-- 实现 saveQuery 方法的 SQL 语句 -->
+    <insert id="saveQuery" parameterType="org.ztshy.entity.ChatRecord" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO chat_record (question, answer, createTime, historyId)
+        VALUES (#{question}, #{answer}, #{createTime}, #{historyId})
+    </insert>
+</mapper>
